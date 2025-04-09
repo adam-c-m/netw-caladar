@@ -2,27 +2,26 @@ const { useState, useEffect } = React;
 
 // Specific prompts for each date
 const promptsByDate = {
-  7: "**It's 3 weeks away today!**",
+  7: "It's 3 weeks away today!",
   8: "Networking myths. 'Networking is just for extroverts' or 'Networking is only about selling' – what's a common misconception about networking that you used to believe?",
-  9: "Virtual networking = global connections – Have you met someone from another country or industry who gave you valuable insights? Share how virtual networking expands opportunities globally. We've had people attend from many different countries!",
+  9: "Virtual networking = global connections – Have you met someone from another country or industry who gave you valuable insights? \n Share how virtual networking expands opportunities globally. We've had people attend from many different countries!",
   10: "Why come to our events over a free event \n* Free networking tends to be really full of people, so hard to meet everyone.\n* People who pay for networking are more likely to have established businesses, (aka money to buy, real connections, real opportunities to offer etc) - free networking could attract very early business owners / skint ones so depends on your target audience\n* We provide 18 tips for networking success to everyone that signs up.",
   11: "Look through / use the testimonials in the affiliate doc to generate your own ideas based on what participants thought. You can use the images too!",
-  14: "**It's 2 weeks away today!**",
+  14: "It's 2 weeks away today!",
   15: "What can you realistically get for £15? Talk about how little that can buy these days (with examples perhaps?) How spending £15 on this event could turn into lots of opportunities.",
   16: "How do you balance networking with your other commitments? (you can mention that our sessions are always under an hour, plus no travel time!)",
-  17: "How has networking benefited you personally or professionally? For me, it's resulted in new clients, speaking opportunities and more!",
+  17: "How has networking benefited you personally or professionally? \n For me, it's resulted in new clients, speaking opportunities and more!",
   18: "What makes our networking events (or KOGs) unique - in your eyes?",
   19: "Use a meme or gif generator to create a silly meme or gif about virtual networking. Use Google to help!",
-  20: "Lots of people say in the survey that the way our events are structured enables them to speak to other business owners about things they hadn't considered, sparking lots of ideas for their own business. Have you experienced this? What kinds of things have you taken away from discussions in our sessions?",
-  21: "**It's 1 week away today!**",
+  20: "Lots of people say in the survey that the way our events are structured enables them to speak to other business owners about things they hadn't considered, sparking lots of ideas for their own business. \n Have you experienced this? What kinds of things have you taken away from discussions in our sessions?",
+  21: "It's 1 week away today!",
   22: "Introvert-friendly networking. Talk about how if big networking events feel overwhelming, ours are designed to be small (never more than 30 people), no pitching, and fun conversations.",
   23: "Look into statistics or quotes about how important networking is - and its effectiveness as part of business and personal growth. Share these. (Check your sources of course!)",
   24: "The benefits of networking outside your profession/industry (i.e how has knowing people in other industries helped you?)",
   25: "What's one thing you wish more people knew about the benefits of networking? (or our networking events in particular)",
   26: "If someone is petrified of networking events what would you say to them about these events?",
   27: "Talk about why the time is now. Why should people not put off attending until the next time.",
-  28: "**LAST DAY **Last minute openings in the diary and why not use that time to meet other business owners / make potential opportunities" };
-
+  28: "LAST DAY \n Last minute openings in the diary and why not use that time to meet other business owners / make potential opportunities" };
 
 function Calendar() {
   const [completed, setCompleted] = useState(() => {
